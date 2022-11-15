@@ -26,7 +26,11 @@ function App() {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="Home" component={Home} />
-        <Stack.Screen name="StickyHeader" component={StickyHeader} />
+        <Stack.Screen
+          name="StickyHeader"
+          component={StickyHeader}
+          options={{ headerShown: false }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
